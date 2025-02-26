@@ -1,11 +1,28 @@
+// src/pages/Home/index.jsx
 import React from "react";
-import { HomeContainer } from "./styles.js";
+import foto from "../../assets/images/imageFoto.png";
 
-const Home = ({ isDarkMode }) => {
+import {
+  HomeContainer,
+  LeftSection,
+  RightSection,
+  ProfilePicture,
+  Presentation,
+} from "./styles";
+
+const Home = () => {
   return (
-    <HomeContainer className={isDarkMode ? "dark-mode" : "light-mode"}>
-      <h1>Home Page</h1>
-      <p>Bem-vindo à minha página inicial!</p>
+    <HomeContainer>
+      <LeftSection>
+        <ProfilePicture src={foto} alt="Profile" />
+        <Presentation>
+          <span>Olá</span>
+          <span>meu nome é</span>
+          <span>Rafael Machado</span>
+          <span>Desenvolvedor de Software</span>
+        </Presentation>
+      </LeftSection>
+      <RightSection />
     </HomeContainer>
   );
 };
