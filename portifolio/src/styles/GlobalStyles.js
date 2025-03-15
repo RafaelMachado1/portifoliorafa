@@ -8,10 +8,15 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html, body, #root {
+    height: 100%; /* Garante que o body ocupe 100% da altura da viewport */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
   body {
     line-height: 1;
-    background-color: ${({ isDarkMode }) => (isDarkMode ? "#333" : "#fff")};
-    color: ${({ isDarkMode }) => (isDarkMode ? "#fff" : "#333")};
+    /* Removi as cores de fundo e texto daqui */
     font-family: sans-serif;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
@@ -28,3 +33,56 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 export default GlobalStyles;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

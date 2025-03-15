@@ -1,47 +1,36 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes} from "styled-components"; 
 import backgroundImage from "../../assets/images/image.png";
 
-const typing = keyframes`
+const fadeIn = keyframes`
   from {
     opacity: 0;
-    transform: translateY(-20px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
-  }
-`;
-
-export const Presentation = styled.div`
-  text-align: left; // Alinha o texto à esquerda
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-top: 2rem;
-  span {
-    display: block;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: ${typing} 1s ease-out forwards;
-    &:nth-child(1) {
-      animation-delay: 1.5s;
-    }
-    &:nth-child(2) {
-      animation-delay: 2.5s;
-    }
-    &:nth-child(3) {
-      animation-delay: 3.5s;
-    }
-    &:nth-child(4) {
-      font-size: 1.5rem;
-      font-weight: normal; // Remove o negrito
-      animation-delay: 3.5s;
-    }
   }
 `;
 
 export const HomeContainer = styled.div`
   display: flex;
   min-height: 100vh;
+  /*background-color: ${props => (props.isDarkMode ? '#202024' : '#f0f0f0')};*/
+  color: ${props => (props.isDarkMode ? '#ffffff' : '#333333')};
+`;
+
+export const Presentation = styled.div`
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-top: 2rem;
+ color: ${props => (props.isDarkMode ? '#8257e6' : '#007bff')};
+  text-shadow: 0 0 10px ${props => (props.isDarkMode ? '#8257e6' : '#007bff')};
+  span {
+    display: block;
+    white-space: nowrap; /* Removi overflow e animation */
+    /* Removi as animações e delays */
+    font-size: ${props => (props.nthChild === '4' ? '1.5rem' : '2.5rem')};
+    font-weight: ${props => (props.nthChild === '4' ? 'normal' : '300')};
+  }
 `;
 
 export const LeftSection = styled.div`
@@ -51,6 +40,7 @@ export const LeftSection = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: ${props => (props.isDarkMode ? '#121214' : '#ffffff')};  
 `;
 
 export const RightSection = styled.div`
@@ -69,3 +59,153 @@ export const ProfilePicture = styled.img`
   margin-bottom: 2rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 `;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

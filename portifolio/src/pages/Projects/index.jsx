@@ -1,11 +1,21 @@
+// src/pages/Projects/index.jsx
 import React from "react";
+import { ProjectsContainer } from "./styles";
 
 const Projects = ({ isDarkMode }) => {
   return (
-    <div className={isDarkMode ? "dark-mode" : "light-mode"}>
+    <ProjectsContainer isDarkMode={isDarkMode}>
       <h1>Projects Page</h1>
-    </div>
+    </ProjectsContainer>
   );
 };
 
 export default Projects;
+
+
+
+
+
+
+
+
