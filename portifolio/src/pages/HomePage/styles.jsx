@@ -1,50 +1,29 @@
-// src/pages/HomePage/HomePage.jsx
-import React from "react";
-import Home from "../Home";
-import About from "../About";
-import Projects from "../Projects";
-import Contact from "../Contact";
+// src/pages/HomePage/styles.js
 import styled from "styled-components";
-import { HomePageContainer } from "./styles";
 
-const HomePage = ({ isDarkMode }) => {
-  return (
-    <HomePageContainer>
-      <div id="home">
-        <Home isDarkMode={isDarkMode} />
-      </div>
-      <div id="about">
-        <About isDarkMode={isDarkMode} />
-      </div>
-      <div id="projects">
-        <Projects isDarkMode={isDarkMode} />
-      </div>
-      <div id="contact">
-        <Contact isDarkMode={isDarkMode} />
-      </div>
-    </HomePageContainer>
-  );
-};
+export const HomePageContainer = styled.div`
+  height: 100vh; /* Garante que o HomePageContainer ocupe a altura total da tela */
+  overflow-y: scroll; /* Adiciona rolagem vertical */
+  scroll-snap-type: y mandatory; /* Força a rolagem a parar em cada seção */
 
-export default HomePage;
+  > div {
+    height: 100vh; /* Garante que cada seção ocupe a altura total da tela */
+    scroll-snap-align: start; /* Alinha cada seção ao início da área de rolagem */
+  }
 
+  #home {
+    scroll-snap-align: start;
+  }
 
+  #about {
+    scroll-snap-align: start;
+  }
 
+  #projects {
+    scroll-snap-align: start;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  #contact {
+    scroll-snap-align: start;
+  }
+`;
