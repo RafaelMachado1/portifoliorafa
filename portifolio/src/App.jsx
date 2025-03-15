@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/index.jsx";
-import Home from "./pages/Home/index.jsx";
-import About from "./pages/About/index.jsx";
-import Projects from "./pages/Projects/index.jsx";
-import Contact from "./pages/Contact/index.jsx";
+import HomePage from "./pages/HomePage/HomePage.jsx"; // Importe o HomePage
 import GlobalStyles from "./styles/GlobalStyles.js";
 
 function App() {
@@ -19,16 +16,31 @@ function App() {
       <GlobalStyles isDarkMode={isDarkMode} />
       <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
       <Routes>
-        <Route path="/" element={<Home isDarkMode={isDarkMode} />} />
-        <Route path="/about" element={<About isDarkMode={isDarkMode} />} />
-        <Route
-          path="/projects"
-          element={<Projects isDarkMode={isDarkMode} />}
-        />
-        <Route path="/contact" element={<Contact isDarkMode={isDarkMode} />} />
+        <Route path="/" element={<HomePage isDarkMode={isDarkMode} />} /> {/* Renderiza o HomePage */}
       </Routes>
     </Router>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

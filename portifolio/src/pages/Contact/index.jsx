@@ -1,11 +1,21 @@
+// src/pages/Contact/index.jsx
 import React from "react";
+import { ContactContainer } from "./styles";
 
 const Contact = ({ isDarkMode }) => {
   return (
-    <div className={isDarkMode ? "dark-mode" : "light-mode"}>
+    <ContactContainer isDarkMode={isDarkMode}>
       <h1>Contact Page</h1>
-    </div>
+    </ContactContainer>
   );
 };
 
 export default Contact;
+
+
+
+
+
+
+
+

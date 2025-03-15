@@ -1,7 +1,6 @@
 // src/pages/Home/index.jsx
 import React from "react";
 import foto from "../../assets/images/imageFoto.png";
-
 import {
   HomeContainer,
   LeftSection,
@@ -10,12 +9,12 @@ import {
   Presentation,
 } from "./styles";
 
-const Home = () => {
+const Home = ({ isDarkMode }) => {
   return (
-    <HomeContainer>
-      <LeftSection>
+    <HomeContainer isDarkMode={isDarkMode}>
+      <LeftSection isDarkMode={isDarkMode}>
         <ProfilePicture src={foto} alt="Profile" />
-        <Presentation>
+        <Presentation isDarkMode={isDarkMode}>
           <span>Olá</span>
           <span>meu nome é</span>
           <span>Rafael Machado</span>
@@ -28,3 +27,43 @@ const Home = () => {
 };
 
 export default Home;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
