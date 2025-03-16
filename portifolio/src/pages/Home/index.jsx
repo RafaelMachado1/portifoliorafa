@@ -4,7 +4,6 @@ import foto from "../../assets/images/imageFoto.png";
 import {
   HomeContainer,
   LeftSection,
-  RightSection,
   ProfilePicture,
   Presentation,
 } from "./styles";
@@ -15,18 +14,53 @@ const Home = ({ isDarkMode }) => {
       <LeftSection isDarkMode={isDarkMode}>
         <ProfilePicture src={foto} alt="Profile" />
         <Presentation isDarkMode={isDarkMode}>
-          <span>Olá</span>
-          <span>meu nome é</span>
-          <span>Rafael Machado</span>
-          <span>Desenvolvedor de Software</span>
+          <span nthChild="1">Olá</span>
+          <span nthChild="2">meu nome é</span>
+          <span nthChild="3">Rafael Machado</span>
+          <span nthChild="4">Desenvolvedor de Software</span>
         </Presentation>
       </LeftSection>
-      <RightSection />
     </HomeContainer>
   );
 };
 
 export default Home;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -6,6 +6,7 @@ import {
   NavItem,
   IconLink,
   DarkModeButton,
+  IconsContainer, // Adicionei este container
 } from "./styles.js";
 import githubIcon from "../../assets/icons/github.png";
 import linkedinIcon from "../../assets/icons/linkedin.png";
@@ -17,20 +18,20 @@ const Header = ({ toggleTheme, isDarkMode }) => {
       <Nav>
         <NavList>
           <NavItem>
-            <a href="#home">Home</a> {/* Link para a âncora #home */}
+            <a href="#home">Home</a>
           </NavItem>
           <NavItem>
-            <a href="#about">About</a> {/* Link para a âncora #about */}
+            <a href="#about">About</a>
           </NavItem>
           <NavItem>
-            <a href="#projects">Projects</a> {/* Link para a âncora #projects */}
+            <a href="#projects">Projects</a>
           </NavItem>
           <NavItem>
-            <a href="#contact">Contact</a> {/* Link para a âncora #contact */}
+            <a href="#contact">Contact</a>
           </NavItem>
         </NavList>
       </Nav>
-      <div>
+      <IconsContainer> {/* Use o novo container aqui */}
         <IconLink
           href="https://github.com/seu-usuario"
           target="_blank"
@@ -55,12 +56,40 @@ const Header = ({ toggleTheme, isDarkMode }) => {
         <DarkModeButton onClick={toggleTheme}>
           {isDarkMode ? "Light Mode" : "Dark Mode"}
         </DarkModeButton>
-      </div>
+      </IconsContainer>
     </HeaderContainer>
   );
 };
 
 export default Header;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
