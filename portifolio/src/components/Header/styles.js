@@ -4,7 +4,7 @@ export const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 2.5rem 2rem; /* Reduzi o padding vertical para diminuir a altura */
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.1),
@@ -20,18 +20,19 @@ export const HeaderContainer = styled.header`
 export const Nav = styled.nav`
   display: flex;
   justify-content: center;
-  flex: 1;
+  flex: 1; /* O menu ocupa o espaço restante */
 `;
 
 export const NavList = styled.ul`
   display: flex;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-left: 150px;
+  justify-content: center; /* Centraliza os itens na horizontal */
 `;
 
 export const NavItem = styled.li`
-  margin: 0 1.5rem;
+  margin: 0 2.5rem;
   font-weight: 600;
   a {
     text-decoration: none;
@@ -43,11 +44,16 @@ export const NavItem = styled.li`
   }
 `;
 
+export const IconsContainer = styled.div`  /* Adicionado */
+  display: flex;
+  align-items: center;
+`;
+
 export const IconLink = styled.a`
   margin-left: 1rem;
   img {
-    width: 24px;
-    height: 24px;
+    width: 34px;
+    height: 34px; /* Ajustei a altura para corresponder à largura */
     filter: grayscale(100%);
     transition: filter 0.3s;
     &:hover {
@@ -65,3 +71,63 @@ export const DarkModeButton = styled.button`
   cursor: pointer;
   margin-left: 1rem;
 `;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

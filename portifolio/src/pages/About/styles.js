@@ -38,7 +38,7 @@ export const ImageContainer = styled.div`
 
 export const TextContainer = styled.div`
   flex: 1;
-  padding: 40px;
+  padding: 30px;
   background-color: ${props => (props.isDarkMode ? '#202024' : '#f0f0f0')};
 
   h1 {
